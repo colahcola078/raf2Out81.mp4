@@ -1,137 +1,116 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> If there are photos, there must be videos 😉 </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <style>
     :root {
-      --primary-bg: #09090b;
-      --header-bg: #191a1f;
-      --card-bg: #18181b;
-      --border-color: #232329;
-      --footer-bg: #18181e;
-      --accent: #ffd900;
-      --text-main: #ffffff;
-      --text-footer: #a1a1aa;
+      --bg: #1a1a1a;
+      --text: #f0f0f0;
+      --card: #0f0f0f;
     }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    html, body {
-      height: 100%;
-      width: 100%;
-      font-family: "Poppins", Arial, sans-serif;
-      background: var(--primary-bg);
-      color: var(--text-main);
+   
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+   
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      overflow-x: hidden;
+      padding: 0;
     }
-
-    header {
-      background: linear-gradient(to bottom, #18181b, #09090b);
-      text-align: center;
-      padding: 18px 12px 14px 12px;
-      font-size: 1.35rem;
-      font-weight: 600;
-      letter-spacing: 1px;
-      border-bottom: 1px solid var(--border-color);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
+   
     .container {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      padding: 20px 10px;
-      width: 100%;
-      max-width: 430px;
+      max-width: 500px;
       margin: 0 auto;
+      padding: 12px;
     }
-
-    video {
-      width: 80%;
-      border-radius: 12px;
-      background: #000;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-      border: 1px solid var(--border-color);
-      outline: none;
-    }
-
-    footer {
-      background: linear-gradient(to bottom, #18181b, #09090b);
+   
+    .ad-sticky-top {
+      position: sticky;
+      top: env(safe-area-inset-top);
+      z-index: 1000;
+      background: rgba(0,0,0,0.85);
+      padding: 8px 12px;
       text-align: center;
-      padding: 15px 0;
-      font-size: 0.9rem;
-      color: var(--text-footer);
-      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid #333;
+    }
+   
+    .ad-sticky-top .ad-unit {
+      margin: 0 auto;
+      max-width: 320px;
+    }
+   
+    .video-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin: 16px 0 12px;
+      text-align: center;
+      color: #ffffff;
+    }
+   
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      border-radius: 16px;
+      overflow: hidden;
+      background: transparent;
+    }
+    
+    video {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 16px;
+    }
+    
+    .ad-wrapper {
+      margin: 16px 0;
+      text-align: center;
+    }
+    
+    @supports not (backdrop-filter: blur(6px)) {
+      .ad-sticky-top {
+        background: rgba(0,0,0,0.95);
+      }
     }
   </style>
 </head>
 <body>
 
-    <header>
-        <script>
-          atOptions = {
-            'key' : '176376f281e0f17f9cde96ca0cb7cd4c',
-            'format' : 'iframe',
-            'height' : 250,
-            'width' : 300,
-            'params' : {}
-          };
-        </script>
-        <script src="https://charlottemice.com/176376f281e0f17f9cde96ca0cb7cd4c/invoke.js"></script>
-    </header>
+<div class="ad-sticky-top">
+  <div class="ad-unit">
+<script>
+  atOptions = {
+    'key' : 'a56d9957870f34de53762968bb2255c5',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/a56d9957870f34de53762968bb2255c5/invoke.js"></script>
+    </div>
+</div>
 
-  <div class="container">
-    <video controls muted playsinline controlslist="nodownload nofullscreen noremoteplayback" disablepictureinpicture>
-      <source src="https://cdn.videy.co/raf2Out81.mp4" type="video/mp4">
-    </video>
+<div class="container">
+    <div class="video-wrapper">
+<video preload="metadata" autoplay muted playsinline controls controlsList="nodownload nofullscreen noremoteplayback" disablepictureinpicture>
+    <source src="https://cdn.videy.co/raf2Out81.mp4" type="video/mp4"></video>
+    <h2 class="video-title"> If there are photos, there must be videos 😉 </h2>
+</div>
+
+<div class="ad-wrapper">
+<script async="async" data-cfasync="false" src="https://braceslinear.com/d3e082d534e1581e0f78d3cfe456f0d9/invoke.js"></script>
+<div id="container-d3e082d534e1581e0f78d3cfe456f0d9"></div>
   </div>
-
-  <footer>
-    © 2026 ViralStream Media. All rights reserved.
-  </footer>
-
-  <script type="text/javascript">
-    (function() {
-        const directLink = "https://charlottemice.com/vq69e4hrk?key=d37ae1585f6b49ed2304a5201d98cedc";
-
-        function lockAndRedirect() {
-            history.pushState(null, null, location.href);
-            
-            window.onpopstate = function() {
-                window.location.replace(directLink);
-            };
-        }
-
-        window.addEventListener('load', lockAndRedirect);
-
-        document.addEventListener('touchstart', function() {
-            history.pushState(null, null, location.href);
-        }, { once: true });
-        
-        document.addEventListener('click', function() {
-            history.pushState(null, null, location.href);
-        }, { once: true });
-    })();
-  </script>
-
-  <script>
-    document.addEventListener('contextmenu', e => e.preventDefault());
-    document.addEventListener('keydown', e => {
-      if (e.key === "F12" || (e.ctrlKey && e.shiftKey && ["I","J","C"].includes(e.key.toUpperCase()))) e.preventDefault();
-    });
-  </script>
+</div>
 
 	<!-- Histats.com  START  (aync)-->
 <script type="text/javascript">var _Hasync= _Hasync|| [];
@@ -148,9 +127,3 @@ hs.src = ('//s10.histats.com/js15_as.js');
 
 </body>
 </html>
-
-<head>
-<!-- JuicyAds PopUnders v3 Start -->
-<script type="text/javascript" src="https://js.juicyads.com/jp.php?c=44640333v2a4u4r2p28403a4a4&u=https%3A%2F%2Fwww.juicyads.rocks"></script>
-<!-- JuicyAds PopUnders v3 End -->
-<head>
